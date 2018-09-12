@@ -16,7 +16,7 @@ namespace DotNetCoreKoans.Koans
         [Step(2)]
         public void AssertTruthWithMessage() 
         {
-            Assert.True(false, "This should be true -- Please fix this");
+            Assert.True(true, "This should be true -- Please fix this");
         }
 
         //To understand reality, we must compare our expectations against reality
@@ -24,7 +24,7 @@ namespace DotNetCoreKoans.Koans
         public void AssertEquality() 
         {
             var expectedValue = 3;
-            var actualValue = 1 + 1;
+            var actualValue = 2 + 1;
             Assert.True(expectedValue == actualValue);
         }
 
@@ -32,7 +32,7 @@ namespace DotNetCoreKoans.Koans
         [Step(4)]
         public void ABetterWayOfAssertingEquality() 
         {
-            var expectedValue = 3;
+            var expectedValue = 2;
             var actualValue = 1 + 1;
             Assert.Equal(expectedValue, actualValue);
         }
